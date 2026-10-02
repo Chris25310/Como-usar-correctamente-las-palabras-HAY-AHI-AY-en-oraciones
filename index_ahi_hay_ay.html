@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ahí, Hay y Ay | Aprende jugando</title>
+<style>
+:root{--p:#6540c7;--s:#009b9f;--a:#ffb703;--r:#e85d9e;--d:#25233a;--l:#f6f5fb}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--l);color:var(--d);line-height:1.6}
+header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:18px 6%;position:sticky;top:0;z-index:5;box-shadow:0 4px 15px #0002}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.logo{font-weight:bold;font-size:1.3rem}nav ul{display:flex;gap:6px;list-style:none;padding:0;margin:0;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:bold;padding:7px 11px;border-radius:20px}nav a:hover{background:#fff3}
+section{max-width:1150px;margin:auto;padding:65px 6%}h2{text-align:center;font-size:2.2rem}
+.hero{max-width:none;min-height:560px;text-align:center;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at 20% 30%,#ffb70344,transparent 25%),radial-gradient(circle at 80% 70%,#009b9f44,transparent 25%),linear-gradient(135deg,#eee8ff,#e7ffff)}
+.words{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;font-size:clamp(3.5rem,10vw,7rem);font-weight:900}.words span{background:#fff;padding:5px 18px;border-radius:25px;box-shadow:0 10px 25px #0002}.ahi{color:var(--p)}.hay{color:var(--s)}.ay{color:var(--r)}
+h1{font-size:clamp(2rem,5vw,3.5rem);margin:20px 0 10px}.sub{font-size:1.15rem;max-width:750px;margin:auto auto 25px}
+.btn{border:0;border-radius:28px;padding:12px 20px;background:var(--p);color:#fff;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;margin:5px}.green{background:var(--s)}.yellow{background:var(--a);color:#222}.pink{background:var(--r)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}.card{background:#fff;padding:25px;border-radius:20px;box-shadow:0 9px 25px #0001;border-top:6px solid var(--p)}.card.hay{border-top-color:var(--s)}.card.ay{border-top-color:var(--r)}
+.big{font-size:3.5rem;text-align:center;font-weight:900;color:var(--p)}.hay .big{color:var(--s)}.ay .big{color:var(--r)}
+.example{background:#f0edff;border-left:5px solid var(--p);padding:13px;border-radius:9px}.hay .example{background:#eaffff;border-left-color:var(--s)}.ay .example{background:#fff0f7;border-left-color:var(--r)}
+.tip{margin-top:22px;padding:17px;background:#fff8dd;border-left:6px solid var(--a);border-radius:10px}
+.table{overflow:auto}table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 8px 20px #0001}th,td{padding:14px;border-bottom:1px solid #ddd;text-align:left}th{background:var(--p);color:#fff}
+.video{background:var(--d);color:#fff;padding:23px;border-radius:20px;text-align:center}.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
+.quiz{background:#fff;max-width:850px;margin:auto;padding:28px;border-radius:20px;box-shadow:0 9px 25px #0002}.q{padding:16px 0;border-bottom:1px solid #eee}.q label{display:block;border:1px solid #ddd;padding:9px;margin:7px 0;border-radius:9px;cursor:pointer}
+.result{display:none;padding:14px;border-radius:10px;margin-top:15px;font-weight:bold}.ok{background:#dff6e8;color:#126a3c}.bad{background:#ffe1e5;color:#9e1c2b}
+.activity{text-align:center;max-width:750px;margin:auto}.blank{font-size:1.9rem;font-weight:bold;color:var(--p);margin:20px}input[type=text]{padding:12px;border:2px solid #bbb;border-radius:9px;font-size:1rem}
+footer{background:var(--d);color:#fff;text-align:center;padding:35px}footer a{color:#cdd6ff}#top{position:fixed;right:18px;bottom:18px;border:0;border-radius:50%;width:45px;height:45px;background:var(--p);color:#fff;font-size:1.3rem;display:none}
+@media(max-width:700px){header{position:relative}nav{justify-content:center}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">📚 Ahí · Hay · Ay</div><ul>
+<li><a href="#inicio">Inicio</a></li><li><a href="#ahi">AHÍ</a></li><li><a href="#hay">HAY</a></li><li><a href="#ay">AY</a></li><li><a href="#comparacion">Comparación</a></li><li><a href="#actividad">Actividad</a></li><li><a href="#quiz">Quiz</a></li></ul></nav></header>
+
+<main>
+<section id="inicio" class="hero"><div><div class="words"><span class="ahi">AHÍ</span><span class="hay">HAY</span><span class="ay">AY</span></div>
+<h1>¿Ahí, hay o ay?</h1><p class="sub">Aprende a diferenciar estas tres palabras de una manera sencilla, visual e interactiva. Lee las reglas, practica y demuestra lo aprendido.</p>
+<a class="btn" href="#ahi">🚀 Comenzar</a><a class="btn green" href="#quiz">🧠 Hacer el quiz</a></div></section>
+
+<section><h2>🎯 Objetivo</h2><div class="card"><p>El objetivo de esta página es aprender a utilizar correctamente <strong>ahí, hay y ay</strong>. Aunque suenan de manera parecida, tienen funciones y significados diferentes. Conocer su uso ayuda a mejorar la escritura y evitar errores ortográficos.</p></div></section>
+
+<section id="ahi"><h2>📍 AHÍ</h2><div class="grid">
+<article class="card"><div class="big">AHÍ</div><h3>Indica un lugar</h3><p><strong>Ahí</strong> es un adverbio de lugar. Se utiliza para señalar dónde está una persona, animal, objeto o situación.</p><div class="example">📌 <strong>Ejemplos:</strong><br>El libro está <strong>ahí</strong>.<br>Siéntate <strong>ahí</strong>.<br>Dejé mi mochila <strong>ahí</strong>.</div></article>
+<article class="card"><h3>🧠 Truco</h3><p>Si puedes preguntar <strong>“¿dónde?”</strong>, probablemente necesitas <strong>ahí</strong>.</p><div class="example"><strong>¿Dónde está el cuaderno?</strong><br>Está <strong>ahí</strong>. 📒</div></article>
+</div></section>
+
+<section id="hay"><h2>📦 HAY</h2><div class="grid">
+<article class="card hay"><div class="big">HAY</div><h3>Indica existencia</h3><p><strong>Hay</strong> se utiliza para expresar que existe o que existen personas, animales, objetos o situaciones.</p><div class="example">📌 <strong>Ejemplos:</strong><br><strong>Hay</strong> tres libros sobre la mesa.<br>En el aula <strong>hay</strong> muchos estudiantes.<br><strong>Hay</strong> una tarea para mañana.</div></article>
+<article class="card hay"><h3>🧠 Truco</h3><p>Si puedes sustituirlo por <strong>“existe” o “existen”</strong>, normalmente corresponde <strong>hay</strong>.</p><div class="example"><strong>Hay</strong> una computadora aquí.<br>→ <strong>Existe</strong> una computadora aquí. 💻</div></article>
+</div></section>
+
+<section id="ay"><h2>😮 AY</h2><div class="grid">
+<article class="card ay"><div class="big">AY</div><h3>Expresa emoción</h3><p><strong>Ay</strong> es una interjección que puede expresar dolor, sorpresa, preocupación, alegría u otras emociones.</p><div class="example">📌 <strong>Ejemplos:</strong><br>¡<strong>Ay</strong>!, me golpeé.<br>¡<strong>Ay</strong>!, qué sorpresa.<br>¡<strong>Ay!</strong>, olvidé mi tarea.</div></article>
+<article class="card ay"><h3>🧠 Truco</h3><p>Si expresa una <strong>emoción o reacción</strong>, generalmente se escribe <strong>ay</strong>.</p><div class="example">😮 <strong>¡Ay!</strong> → expresa una reacción o emoción.</div></article>
+</div></section>
+
+<section id="comparacion"><h2>⚖️ Diferencias</h2><div class="table"><table>
+<tr><th>Palabra</th><th>Función</th><th>Pista</th><th>Ejemplo</th></tr>
+<tr><td><strong>AHÍ</strong></td><td>Indica un lugar.</td><td>¿Dónde?</td><td>El lápiz está ahí.</td></tr>
+<tr><td><strong>HAY</strong></td><td>Indica existencia.</td><td>¿Existe/existen?</td><td>Hay dos lápices.</td></tr>
+<tr><td><strong>AY</strong></td><td>Expresa una emoción.</td><td>¿Es una exclamación?</td><td>¡Ay!, qué susto.</td></tr>
+</table></div><div class="tip">💡 <strong>Recuerda:</strong> AHÍ = lugar 📍 · HAY = existencia 📦 · AY = emoción 😮</div></section>
+
+<section><h2>🔍 Observa la diferencia</h2><div class="card"><ul>
+<li>📍 El cuaderno está <strong>ahí</strong>. → hablamos de un lugar.</li>
+<li>📦 <strong>Hay</strong> un cuaderno en la mesa. → hablamos de existencia.</li>
+<li>😮 ¡<strong>Ay</strong>!, se me cayó el cuaderno. → expresamos una reacción.</li>
+</ul></div></section>
+
+<section><h2>🎬 Videos educativos</h2><div class="grid">
+<div class="video"><h3 style="color:white">Ahí, hay y ay</h3><iframe src="https://www.youtube.com/embed?listType=search&list=ahi%20hay%20ay%20reglas%20ortograficas" title="Video sobre ahí hay y ay" allowfullscreen></iframe><a class="btn yellow" target="_blank" href="https://www.youtube.com/results?search_query=ahi+hay+ay+reglas+ortograficas">▶ Ver en YouTube</a></div>
+<div class="video"><h3 style="color:white">Ejercicios</h3><iframe src="https://www.youtube.com/embed?listType=search&list=ahi%20hay%20ay%20ejercicios" title="Ejercicios de ahí hay y ay" allowfullscreen></iframe><a class="btn yellow" target="_blank" href="https://www.youtube.com/results?search_query=ahi+hay+ay+ejercicios">▶ Ver ejercicios</a></div>
+</div></section>
+
+<section id="actividad"><h2>✍️ Actividad interactiva</h2><div class="card activity"><p>Completa la oración escribiendo <strong>ahí, hay o ay</strong>.</p><div class="blank" id="sentence">¡___! Me olvidé las llaves.</div><input id="answer" type="text" placeholder="Escribe tu respuesta"><br><button class="btn" onclick="check()">Comprobar</button><button class="btn green" onclick="next()">Nueva oración</button><div id="feedback" class="result"></div></div></section>
+
+<section id="quiz"><h2>🏆 Quiz final</h2><div class="quiz"><form id="quizForm">
+<div class="q"><strong>1. El cuaderno está ___.</strong><label><input type="radio" name="q1" value="a"> hay</label><label><input type="radio" name="q1" value="b"> ahí</label><label><input type="radio" name="q1" value="c"> ay</label></div>
+<div class="q"><strong>2. ___ muchos estudiantes en el salón.</strong><label><input type="radio" name="q2" value="a"> Ahí</label><label><input type="radio" name="q2" value="b"> Hay</label><label><input type="radio" name="q2" value="c"> Ay</label></div>
+<div class="q"><strong>3. ¡___!, qué sorpresa.</strong><label><input type="radio" name="q3" value="a"> Hay</label><label><input type="radio" name="q3" value="b"> Ahí</label><label><input type="radio" name="q3" value="c"> Ay</label></div>
+<div class="q"><strong>4. ¿Cuál indica un lugar?</strong><label><input type="radio" name="q4" value="a"> ahí</label><label><input type="radio" name="q4" value="b"> hay</label><label><input type="radio" name="q4" value="c"> ay</label></div>
+<div class="q"><strong>5. ¿Cuál expresa una emoción?</strong><label><input type="radio" name="q5" value="a"> hay</label><label><input type="radio" name="q5" value="b"> ahí</label><label><input type="radio" name="q5" value="c"> ay</label></div>
+<button type="button" class="btn yellow" onclick="grade()">🏆 Calificar</button><button type="button" class="btn green" onclick="resetQ()">🔄 Reiniciar</button><div id="score" class="result"></div>
+</form></div></section>
+
+<section><h2>📚 Fuentes recomendadas</h2><div class="card"><ul><li><a href="https://www.rae.es/" target="_blank">Real Academia Española (RAE)</a></li><li><a href="https://dle.rae.es/" target="_blank">Diccionario de la lengua española</a></li><li><a href="https://www.fundeu.es/" target="_blank">FundéuRAE</a></li><li><a href="https://www.youtube.com/" target="_blank">YouTube</a> para recursos audiovisuales.</li></ul><p>Los recursos externos pertenecen a sus respectivos sitios y deben utilizarse respetando sus derechos de autor.</p></div></section>
+</main>
+
+<footer><h3 style="color:white">📚 Ahí · Hay · Ay</h3><p>Página educativa de Lengua y Literatura · Aprende ortografía de forma interactiva.</p></footer>
+<button id="top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const a=[
+["¡___! Me olvidé las llaves.","ay"],["El lápiz está ___, junto al cuaderno.","ahí"],
+["___ cinco estudiantes en el patio.","hay"],["¡___!, qué frío hace.","ay"],
+["Mi mochila está ___.","ahí"],["___ una película nueva en el cine.","hay"]];
+let n=0;
+function check(){let x=document.getElementById("answer").value.trim().toLowerCase(),r=document.getElementById("feedback");r.style.display="block";if(x==a[n][1]){r.className="result ok";r.textContent="✅ ¡Correcto! Muy bien."}else{r.className="result bad";r.textContent="❌ La respuesta correcta es: "+a[n][1]+"."}}
+function next(){n=(n+1)%a.length;document.getElementById("sentence").textContent=a[n][0];document.getElementById("answer").value="";document.getElementById("feedback").style.display="none"}
+function grade(){let c={q1:"b",q2:"b",q3:"c",q4:"a",q5:"c"},s=0,k=0;for(let q in c){let z=document.querySelector('input[name="'+q+'"]:checked');if(z){k++;if(z.value==c[q])s++}}let r=document.getElementById("score");r.style.display="block";if(k<5){r.className="result bad";r.textContent="⚠️ Responde todas las preguntas.";return}r.className="result "+(s>=4?"ok":"bad");r.textContent="Puntuación: "+s+"/5. "+(s==5?"🏆 ¡Excelente!":s>=4?"👏 ¡Muy bien!":"📚 Sigue practicando y vuelve a intentarlo.")}
+function resetQ(){document.getElementById("quizForm").reset();document.getElementById("score").style.display="none"}
+addEventListener("scroll",()=>document.getElementById("top").style.display=scrollY>400?"block":"none");
+</script>
+</body>
+</html>
